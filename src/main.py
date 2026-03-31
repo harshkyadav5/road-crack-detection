@@ -13,11 +13,10 @@ Pipeline Overview:
     3. Enhance contrast (CLAHE)
     4. Apply Gaussian Blur for noise removal
     5. Detect edges using Canny Edge Detection
-    6. Apply adaptive thresholding
-    7. Combine edge and threshold results
-    8. Clean up with morphological operations
-    9. Detect and filter contours
-   10. Draw cracks on original image and classify severity
+    6. Combine edge and threshold results
+    7. Clean up with morphological operations
+    8. Detect and filter contours
+    9. Draw cracks on original image and classify severity
 """
 
 import os
@@ -110,7 +109,6 @@ def process_image(image_path, output_dir="outputs"):
     save_image(gray,    os.path.join(output_dir, f"{basename}_1_grayscale.jpg"))
     save_image(blurred, os.path.join(output_dir, f"{basename}_2_blurred.jpg"))
     save_image(edges,   os.path.join(output_dir, f"{basename}_3_edges.jpg"))
-    save_image(thresh,  os.path.join(output_dir, f"{basename}_4_threshold.jpg"))
     save_image(cleaned, os.path.join(output_dir, f"{basename}_5_morphology.jpg"))
     save_image(result,  os.path.join(output_dir, f"{basename}_6_result.jpg"))
 
@@ -120,9 +118,8 @@ def process_image(image_path, output_dir="outputs"):
         "2. Grayscale":       gray,
         "3. Blurred":         blurred,
         "4. Canny Edges":     edges,
-        "5. Threshold":       thresh,
-        "6. Morphology":      cleaned,
-        "7. Detected Cracks": result,
+        "5. Morphology":      cleaned,
+        "6. Detected Cracks": result,
     }
     display_detailed_results(
         stages,
