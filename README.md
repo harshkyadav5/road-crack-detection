@@ -1,6 +1,6 @@
 # Smart Road Crack Detection using Image Processing
 
-A computer vision project that detects cracks in road surface images using **classical image processing techniques** — no deep learning required. Built with Python and OpenCV as a university course project.
+A computer vision project that detects cracks in road surface images using **classical image processing techniques**.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-green?logo=opencv)
