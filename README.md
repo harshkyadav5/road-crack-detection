@@ -64,7 +64,6 @@ road-crack-detection/
 │   └── utils.py           # Load/save images, display, reporting
 ├── outputs/               # Generated output images
 ├── requirements.txt       # Python dependencies
-├── PROJECT_REPORT.md      # Detailed project report
 └── README.md              # This file
 ```
 
